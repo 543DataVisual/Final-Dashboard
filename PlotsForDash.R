@@ -42,7 +42,7 @@ saveRDS(graph,file="graph.rds")
 # clean memory 
 rm(list = ls())
 #loading in data
-location='https://github.com/543DataVisual/deliverable2/raw/main/'
+location='https://github.com/543DataVisual/Final-Dashboard/'
 file='rating_address.csv'
 link=paste0(location,file)
 

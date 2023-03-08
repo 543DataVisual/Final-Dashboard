@@ -45,12 +45,12 @@ rating_address
 names(rating_address)[1:3] = c("rating","location","counts")
 rating_address
 
-write.csv(file = "rating_address.csv")
+write.csv(rating_address, file = "rating_address.csv")
 
 
 
 -------------------------------------------
-  Deliverable 3:
+#Deliverable 3:
 # clean memory
 rm(list = ls())
 

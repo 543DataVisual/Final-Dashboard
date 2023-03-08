@@ -1,0 +1,34 @@
+---
+title: "Deliverables from PUBPOL 543"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+    
+Row 
+-------------------------------------   
+    
+### Airbnb data:
+    
+```{r}
+readRDS("graph2.rds") 
+```
+   
+Row {.tabset .tabset-fade}
+-------------------------------------
+   
+### City of Bellevue data: chart 1
+
+```{r}
+readRDS("graph.rds")
+```   
+ 
+### City of Bellevue data: chart 2
+    
+```{r}
+readRDS("map.rds")
+```

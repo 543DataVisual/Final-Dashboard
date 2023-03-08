@@ -42,11 +42,11 @@ saveRDS(graph,file="graph.rds")
 # clean memory 
 rm(list = ls())
 #loading in data
-location='https://github.com/543DataVisual/Final-Dashboard/'
+location='https://github.com/543DataVisual/Final-Dashboard/raw/main/'
 file='rating_address.csv'
 link=paste0(location,file)
 
-airbnb_data=read.csv(link)
+rating_address=read.csv(link)
 
 #creating plot
 
@@ -61,12 +61,13 @@ barstacked
 
 saveRDS(barstacked,file="graph2.rds") 
 ----------------------------------
-  Deliverable 3:
+#Deliverable 3:
 # clean memory
 rm(list = ls())
 library(sf)
 #loading in shape file
-maplink = 'https://github.com/543DataVisual/Deliverable-3/raw/main/ESDIST.geojson'
+maplink = 'https://github.com/543DataVisual/Final-Dashboard/raw/main/mapWorld_indexes.geojson/'
+
 mapWorld=read_sf(maplink)
 
 mapWorld_indexes=read_sf("mapWorld_indexes.geojson")

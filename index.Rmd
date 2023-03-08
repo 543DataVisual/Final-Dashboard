@@ -18,7 +18,7 @@ Row
 readRDS("graph2.rds") 
 ```
    
-Row {.tabset .tabset-fade}
+Row {data-height=450}
 -------------------------------------
    
 ### City of Bellevue data: chart 1
